@@ -19,6 +19,7 @@
 		AB7F02DE1934DF9000318355 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7F02C61934DF9000318355 /* UIKit.framework */; };
 		AB7F02E61934DF9000318355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB7F02E41934DF9000318355 /* InfoPlist.strings */; };
 		AB7F02E81934DF9000318355 /* Build4STL_2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F02E71934DF9000318355 /* Build4STL_2014Tests.m */; };
+		ABEC51ED19383F1100486872 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC51EC19383F1100486872 /* LocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		AB7F02E31934DF9000318355 /* Build4STL 2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Build4STL 2014Tests-Info.plist"; sourceTree = "<group>"; };
 		AB7F02E51934DF9000318355 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB7F02E71934DF9000318355 /* Build4STL_2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Build4STL_2014Tests.m; sourceTree = "<group>"; };
+		ABEC51EB19383F1100486872 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		ABEC51EC19383F1100486872 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		ABEC51EE19383F5E00486872 /* LocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		AB7F02C81934DF9000318355 /* Build4STL 2014 */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC51EA19383F0500486872 /* LocationController */,
 				AB7F02D11934DF9000318355 /* BSTLAppDelegate.h */,
 				AB7F02D21934DF9000318355 /* BSTLAppDelegate.m */,
 				AB7F02D41934DF9000318355 /* Images.xcassets */,
@@ -142,6 +147,16 @@
 				AB7F02E41934DF9000318355 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABEC51EA19383F0500486872 /* LocationController */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC51EB19383F1100486872 /* LocationController.h */,
+				ABEC51EC19383F1100486872 /* LocationController.m */,
+				ABEC51EE19383F5E00486872 /* LocationDelegate.h */,
+			);
+			name = LocationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +257,7 @@
 			files = (
 				AB7F02CF1934DF9000318355 /* main.m in Sources */,
 				AB7F02D31934DF9000318355 /* BSTLAppDelegate.m in Sources */,
+				ABEC51ED19383F1100486872 /* LocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +306,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -328,7 +344,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -438,6 +454,7 @@
 				AB7F02ED1934DF9000318355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB7F02EE1934DF9000318355 /* Build configuration list for PBXNativeTarget "Build4STL 2014Tests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +463,7 @@
 				AB7F02F01934DF9000318355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

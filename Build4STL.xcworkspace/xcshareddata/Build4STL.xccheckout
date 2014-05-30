@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>52DE490E-66BF-4F10-8513-0E99079ECBD9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Build4STL</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64D2F26C-D6E4-4CF0-9017-EAE35158A0DF</key>
+		<string>ssh://github.com/chaseholland/Build4STL-2014-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Build4STL.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64D2F26C-D6E4-4CF0-9017-EAE35158A0DF</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chaseholland/Build4STL-2014-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64D2F26C-D6E4-4CF0-9017-EAE35158A0DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64D2F26C-D6E4-4CF0-9017-EAE35158A0DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Build4STL-2014-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
