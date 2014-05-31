@@ -14,3 +14,11 @@ Required Libraries
 ==================
 
 - Core Location
+
+How to Run
+==================
+
+1) Sign up for free API key from Weather Underground
+2) Place API Key into Config.h where it says "your api key here"
+3) Hit build and run to deploy to the simulator
+4) Under "Debug" on the menu bar in the simulator, change the location to something like Apple or Custom so the simulator knows where to get weather from.
