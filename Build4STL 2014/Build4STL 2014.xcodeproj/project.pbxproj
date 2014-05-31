@@ -20,6 +20,8 @@
 		AB7F02E61934DF9000318355 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB7F02E41934DF9000318355 /* InfoPlist.strings */; };
 		AB7F02E81934DF9000318355 /* Build4STL_2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F02E71934DF9000318355 /* Build4STL_2014Tests.m */; };
 		ABEC51ED19383F1100486872 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC51EC19383F1100486872 /* LocationController.m */; };
+		ABEC51FF1939249800486872 /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */; };
+		ABEC5205193924EF00486872 /* BSTLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC5204193924EF00486872 /* BSTLMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		ABEC51EB19383F1100486872 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
 		ABEC51EC19383F1100486872 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		ABEC51EE19383F5E00486872 /* LocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDelegate.h; sourceTree = "<group>"; };
+		ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPhone.storyboard"; sourceTree = "<group>"; };
+		ABEC5203193924EF00486872 /* BSTLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTLMainViewController.h; sourceTree = "<group>"; };
+		ABEC5204193924EF00486872 /* BSTLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTLMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				ABEC51EA19383F0500486872 /* LocationController */,
-				AB7F02D11934DF9000318355 /* BSTLAppDelegate.h */,
-				AB7F02D21934DF9000318355 /* BSTLAppDelegate.m */,
+				ABEC5200193924A700486872 /* AppDelegate */,
+				ABEC5206193924F200486872 /* MainViewController */,
+				ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */,
 				AB7F02D41934DF9000318355 /* Images.xcassets */,
 				AB7F02C91934DF9000318355 /* Supporting Files */,
 			);
@@ -157,6 +163,24 @@
 				ABEC51EE19383F5E00486872 /* LocationDelegate.h */,
 			);
 			name = LocationController;
+			sourceTree = "<group>";
+		};
+		ABEC5200193924A700486872 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AB7F02D11934DF9000318355 /* BSTLAppDelegate.h */,
+				AB7F02D21934DF9000318355 /* BSTLAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ABEC5206193924F200486872 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC5203193924EF00486872 /* BSTLMainViewController.h */,
+				ABEC5204193924EF00486872 /* BSTLMainViewController.m */,
+			);
+			name = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEC51FF1939249800486872 /* Storyboard-iPhone.storyboard in Resources */,
 				AB7F02CD1934DF9000318355 /* InfoPlist.strings in Resources */,
 				AB7F02D51934DF9000318355 /* Images.xcassets in Resources */,
 			);
@@ -255,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEC5205193924EF00486872 /* BSTLMainViewController.m in Sources */,
 				AB7F02CF1934DF9000318355 /* main.m in Sources */,
 				AB7F02D31934DF9000318355 /* BSTLAppDelegate.m in Sources */,
 				ABEC51ED19383F1100486872 /* LocationController.m in Sources */,
