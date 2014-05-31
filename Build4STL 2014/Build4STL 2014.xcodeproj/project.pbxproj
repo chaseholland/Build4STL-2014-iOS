@@ -22,6 +22,8 @@
 		ABEC51ED19383F1100486872 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC51EC19383F1100486872 /* LocationController.m */; };
 		ABEC51FF1939249800486872 /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */; };
 		ABEC5205193924EF00486872 /* BSTLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC5204193924EF00486872 /* BSTLMainViewController.m */; };
+		ABEC524A193A1DB300486872 /* BSTLServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEC5249193A1DB300486872 /* BSTLServerConnection.m */; };
+		ABEC524F193A25D800486872 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEC524E193A25D800486872 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPhone.storyboard"; sourceTree = "<group>"; };
 		ABEC5203193924EF00486872 /* BSTLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTLMainViewController.h; sourceTree = "<group>"; };
 		ABEC5204193924EF00486872 /* BSTLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTLMainViewController.m; sourceTree = "<group>"; };
+		ABEC5248193A1DB300486872 /* BSTLServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTLServerConnection.h; sourceTree = "<group>"; };
+		ABEC5249193A1DB300486872 /* BSTLServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTLServerConnection.m; sourceTree = "<group>"; };
+		ABEC524C193A1F7000486872 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		ABEC524E193A25D800486872 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEC524F193A25D800486872 /* CoreLocation.framework in Frameworks */,
 				AB7F02C51934DF9000318355 /* CoreGraphics.framework in Frameworks */,
 				AB7F02C71934DF9000318355 /* UIKit.framework in Frameworks */,
 				AB7F02C31934DF9000318355 /* Foundation.framework in Frameworks */,
@@ -105,6 +112,7 @@
 		AB7F02C11934DF9000318355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC524E193A25D800486872 /* CoreLocation.framework */,
 				AB7F02C21934DF9000318355 /* Foundation.framework */,
 				AB7F02C41934DF9000318355 /* CoreGraphics.framework */,
 				AB7F02C61934DF9000318355 /* UIKit.framework */,
@@ -116,10 +124,12 @@
 		AB7F02C81934DF9000318355 /* Build4STL 2014 */ = {
 			isa = PBXGroup;
 			children = (
+				ABEC524C193A1F7000486872 /* Config.h */,
 				ABEC51EA19383F0500486872 /* LocationController */,
 				ABEC5200193924A700486872 /* AppDelegate */,
 				ABEC5206193924F200486872 /* MainViewController */,
-				ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */,
+				ABEC524B193A1DB700486872 /* BSTLServerConnection */,
+				ABEC524D193A22B600486872 /* Storyboards */,
 				AB7F02D41934DF9000318355 /* Images.xcassets */,
 				AB7F02C91934DF9000318355 /* Supporting Files */,
 			);
@@ -181,6 +191,23 @@
 				ABEC5204193924EF00486872 /* BSTLMainViewController.m */,
 			);
 			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		ABEC524B193A1DB700486872 /* BSTLServerConnection */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC5248193A1DB300486872 /* BSTLServerConnection.h */,
+				ABEC5249193A1DB300486872 /* BSTLServerConnection.m */,
+			);
+			name = BSTLServerConnection;
+			sourceTree = "<group>";
+		};
+		ABEC524D193A22B600486872 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC51FE1939249800486872 /* Storyboard-iPhone.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +311,7 @@
 				AB7F02CF1934DF9000318355 /* main.m in Sources */,
 				AB7F02D31934DF9000318355 /* BSTLAppDelegate.m in Sources */,
 				ABEC51ED19383F1100486872 /* LocationController.m in Sources */,
+				ABEC524A193A1DB300486872 /* BSTLServerConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

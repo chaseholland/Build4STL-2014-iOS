@@ -3,7 +3,7 @@
 //  BarsOfLife
 //
 //  Created by Chase Holland on 4/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Chase Holland. All rights reserved.
 //
 
 #import "LocationController.h"
@@ -38,7 +38,7 @@ static LocationController *sharedInstance;
         locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
         locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        locationManager.purpose = @"Enable location services to see advertisements about places near you.";
+        locationManager.purpose = @"Enable location services for this app to work.";
         m_enabled = YES;
         [self start];
     }
@@ -66,7 +66,7 @@ static LocationController *sharedInstance;
     {
         return NO;
     }
-    if (m_currentLocation.horizontalAccuracy <= 300.f)
+    if (m_currentLocation.horizontalAccuracy <= 500.f)
         return YES;
 
     else

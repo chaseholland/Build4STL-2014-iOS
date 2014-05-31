@@ -3,10 +3,10 @@
 //  Build4STL 2014
 //
 //  Created by Chase Holland on 5/27/14.
-//  Copyright (c) 2014 Build4STL. All rights reserved.
 //
 
 #import "BSTLAppDelegate.h"
+#import "LocationController.h"
 
 @implementation BSTLAppDelegate
 
@@ -25,11 +25,17 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    // Stop tracking location to save battery
+    [[LocationController sharedInstance] stop];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    // Start tracking location
+    [[LocationController sharedInstance] start];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
