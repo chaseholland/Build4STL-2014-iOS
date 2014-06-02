@@ -23,4 +23,6 @@
 //
 - (IBAction)updateButtonPressed:(id)sender;
 
+- (void) updateWeather:(NSDictionary*) weatherData;
+
 @end

@@ -70,29 +70,34 @@
             
             return;
         }
+        [self performSelectorOnMainThread:@selector(updateWeather:) withObject:weatherData waitUntilDone:NO];
         
-        NSLog(@"Updating the GUI!");
-        
-        // parse out what we want and update the GUI
-        NSDictionary* forecastData = [[weatherData objectForKey:@"forecast"] objectForKey:@"simpleforecast"];
-        NSDictionary* todayData = [[forecastData objectForKey:@"forecastday"] objectAtIndex:0];
-        
-        NSInteger high = [[[todayData objectForKey:@"high"] objectForKey:@"fahrenheit"] intValue];
-        NSInteger low = [[[todayData objectForKey:@"low"] objectForKey:@"fahrenheit"] intValue];
-        
-        // determine pants or shorts
-        if (high >= 80 && low >= 64)
-            m_pantsOrShortsLabel.text = @"Shorts";
-        else
-            m_pantsOrShortsLabel.text = @"Pants";
-        
-        // update the high / low labels
-        m_highTempLabel.text = [NSString stringWithFormat:@"%ld", (long)high];
-        m_lowTempLabel.text = [NSString stringWithFormat:@"%ld", (long)low];
-        
-        // kill the update spinner
-        [m_updateIndicatorView stopAnimating];
     }];
+}
+
+- (void) updateWeather:(NSDictionary*) weatherData
+{
+    NSLog(@"Updating the GUI!");
+    
+    // parse out what we want and update the GUI
+    NSDictionary* forecastData = [[weatherData objectForKey:@"forecast"] objectForKey:@"simpleforecast"];
+    NSDictionary* todayData = [[forecastData objectForKey:@"forecastday"] objectAtIndex:0];
+    
+    NSInteger high = [[[todayData objectForKey:@"high"] objectForKey:@"fahrenheit"] intValue];
+    NSInteger low = [[[todayData objectForKey:@"low"] objectForKey:@"fahrenheit"] intValue];
+    
+    // determine pants or shorts
+    if (high >= 80 && low >= 64)
+        m_pantsOrShortsLabel.text = @"Shorts";
+    else
+        m_pantsOrShortsLabel.text = @"Pants";
+    
+    // update the high / low labels
+    m_highTempLabel.text = [NSString stringWithFormat:@"%ld", (long)high];
+    m_lowTempLabel.text = [NSString stringWithFormat:@"%ld", (long)low];
+    
+    // kill the update spinner
+    [m_updateIndicatorView stopAnimating];
 }
 
 @end

@@ -9,6 +9,6 @@
 #ifndef Build4STL_2014_Config_h
 #define Build4STL_2014_Config_h
 
-#define WUNDERGROUND_API_KEY @"your api key here"
+#define WUNDERGROUND_API_KEY @"c4c1124a5e9be1d9"
 
 #endif
